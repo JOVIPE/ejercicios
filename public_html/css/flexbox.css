@@ -1,0 +1,64 @@
+@charset "UTF-8";
+div{
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    text-align: center;
+}
+#flex-container-01,#flex-container-02{
+    width: 90vw; /*90% del view port*/
+    height: 500px;
+    display: flex;
+    min-width: 100px;
+    min-height: 100px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+
+div[id^="flex-item-"]{
+    width: 150px;
+    height: 150px;
+    
+}
+
+#flex-item-01{
+    background-color: aquamarine;
+    order: 1; /*orden dentro del container*/
+    flex-grow: 3; /*factor de crecimiento*/
+    flex-shrink: 4; /*factor de encogimiento*/
+    flex-basis: 50px;/*medida de referencia*/
+}
+
+#flex-item-02{
+    background-color:  cyan;
+    order: 0;
+    flex-grow: 2;
+    flex-shrink: 3;
+    flex-basis: 50px;/*medida de referencia*/
+}
+
+#flex-item-03{
+    background-color:  lawngreen;
+    order: 2;
+    flex-shrink: 0.5;
+    flex-basis: 50px;/*medida de referencia*/  
+}
+#flex-container-02{
+    justify-content: space-around;
+    align-items: center; /* stretch solo funciona si no s epone eight en elos items*/
+}
+#flex-item-04{
+    background-color: red;
+    align-self: flex-end;
+}
+
+#flex-item-05{
+    background-color:  green;
+
+}
+
+#flex-item-06{
+    background-color:  violet;
+
+}

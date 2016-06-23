@@ -1,0 +1,189 @@
+@charset "UTF-8";
+body {
+    font-family: 'Rosario', sans-serif;
+    font-size: 14pt;
+    font-weight: normal;
+    line-height: 1.5em;
+    text-align: justify;
+    text-align-last: left;
+    color: black;
+    margin: 2em;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1883ba;
+    margin-bottom: 2rem;
+    text-decoration-line:underline;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+h1 {
+counter-reset: section; /* set section to 0 */
+}
+h2:before {
+content: counter(section) ".";
+counter-increment: section;
+}
+#reloj{
+   font-family: 'Orbitron', sans-serif;
+   font-size: 5em;
+   color:greenyellow;
+   text-align: center;
+   border: 20px solid;
+   border-color: greenyellow;
+   background-color: black;
+   border-radius:  20px;
+   border-style: solid;
+   border-width: 10px;
+   padding: 1em;
+   width: 3em;
+   margin: auto;
+}
+caption {
+    caption-side: bottom;
+    margin-top: 1em;
+    font-size: 1rem;
+    color: black;
+}
+
+table{
+    table-layout: auto;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+#tresenlinia {
+    font-size: 5rem;
+    width: 20rem;
+    height: 20rem;
+    background-color: black;
+    color: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 4px;   
+}
+#tresenlinia td{
+    vertical-align: middle;
+    text-align: center;
+    border-style: solid;
+    border-color: white;
+    border-width: 3px; 
+}
+#contabilidad {
+    color: black;
+    font-size: 1.5rem;
+   
+}
+
+#contabilidad tbody{
+     counter-reset: contador;
+}
+
+#contabilidad td, #contabilidad th{
+    vertical-align: middle;
+    text-align: right;
+    padding: 0.8rem;
+}
+
+#contabilidad td{
+    border-style: solid;
+    border-color: black;
+    border-width: 1px; 
+}
+
+#contabilidad tbody td:first-child:before{
+    content:counter(contador);
+    counter-increment: contador;
+}
+#contabilidad th{
+    color: white;
+    background-color: black;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px; 
+}
+#contabilidad th:last-child{
+    border-right-color: black;
+}
+
+#contabilidad th:first-child{
+    border-left-color: black;
+}
+
+#contabilidad td:first-child, #contabilidad td:last-child {
+    text-align: left;
+}
+
+#contabilidad tbody tr:nth-child(2n){
+    background-color: pink;
+}
+
+#contabilidad tfoot{
+    background-color: orange;
+    border-top-color: red;
+    border-top-style: double;
+    border-top-width: 6px;
+}
+#sudoku{
+    table-layout: fixed;
+    color: black;
+    font-size: 1.8rem;
+    width: 30rem;
+    height: 30rem;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    font-weight:  bold;
+}
+
+#sudoku td{
+    vertical-align: middle;
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px; 
+}
+/* línies verticals */
+#sudoku td:nth-child(3n+1){
+    border-left-style: solid;
+    border-left-color: black;
+    border-left-width: 3px; 
+}
+/* línies horitzontals */
+#sudoku tr:nth-child(3n+3){
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-bottom-width: 3px; 
+}
+
+#ajedrez{
+    table-layout: fixed;
+    color: black;
+    font-size: 3.5rem;
+    width: 32rem;
+    height: 32rem;
+    border-style: double;
+    border-color: black;
+    border-width: 6px;
+}
+
+#ajedrez td{
+    vertical-align: middle;
+    text-align: center;
+    height: 4rem;
+    width: 4rem;
+}
+
+#ajedrez tr:nth-child(2n+1) td:nth-child(2n) {
+    background-color: lightgray;
+}
+
+#ajedrez tr:nth-child(2n) td:nth-child(2n+1) {
+    background-color: lightgray;
+}

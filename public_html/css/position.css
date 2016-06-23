@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+div{
+    width:75px;
+    height:75px;
+    border: 1px solid black;
+    text-align: center;
+}
+#pos01{
+    background-color: bisque;
+    /* position:static; Valor por dfecto*/
+}
+#pos02{
+    background-color: chartreuse;
+    position: relative;
+    left: 100px;
+    top: 50px;
+    /* la distancia es con respecto a donde le tocaria situarse, justo debajo de pos01*/
+}
+#pos03{
+    background-color: indianred;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    /* la distancia es con respecto al ultimo padre no static, en este caso html*/
+}
+#pos05{
+    width:300px;
+    height:300px;
+    background-color: gold;
+    position: relative;
+    left: 190px;
+    top: -200px;
+}
+#pos06{
+    background-color: deeppink;
+    position: absolute;
+    left: 130px;
+    top: 130px;
+    /* la distancia es con respecto al ultimo padre no static, en este caso pas05*/
+}
+#pos07{
+    background-color: royalblue;
+    position: relative;
+    /* la distancia es con respecto a donde le tocaria situarse, justo dode iria pos06, no va al principio de div05 por el texto que ocupa sitio como caja*/
+    
+}
+#pos08{
+    background-color: darkseagreen;
+    position: fixed;
+    left: 150px;
+    top: 15px;
+    /* la distancia es respecto al view port, en este caso html*/
+}

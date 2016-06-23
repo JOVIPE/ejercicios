@@ -1,0 +1,85 @@
+@charset "UTF-8";
+body{
+    width: 80vw;
+    font-family: "Raleway", sans-serif;
+    font-size: 16pt;
+    line-height: 1.7rem;
+    margin: 5vw auto 2vw;
+    letter-spacing: 0.1em;
+}
+p{
+    text-align: justify;
+    text-align-last: left;
+    margin: 0 0 1.8rem;
+}
+
+header #logo, header #cab, header #cve{
+    margin-top: 0;
+    padding: 0.2em 0;
+    position: relative;
+}
+
+section>h1{
+    background-color: #c0c0c0;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 0.1em 0.5em;
+    margin: 3em 0 2em;
+}
+section section>h1{
+    background-color: transparent;
+    border-bottom: 0.25rem solid #c0c0c0;
+    color: red;
+    padding-left: 0.1em;
+    margin: 0 0 1em;
+}
+
+article>h1{
+    color: black;
+    font-size: 1.35rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+footer{
+    border-top: 1px solid black;
+    margin-top: 5rem;
+    padding: 0.7em 0;
+}
+footer ul, header ul{
+    list-style-type: none;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+footer ul li, header ul li{
+    display: inline-block;
+    position: absolute;
+}
+footer ul li:first-of-type{
+    position: relative;
+}
+
+footer ul li:nth-of-type(3){
+    right: 0;
+}
+
+footer ul li:nth-of-type(2){
+    left: calc(40% - 1px - 0.5rem - 2.5rem);
+}
+footer ul li a{
+    text-decoration: none;
+    color: #1883ba;
+}
+
+footer ul li a:hover, footer ul li a:focus{
+    text-decoration: none;
+    color: blueviolet;
+}
+
+

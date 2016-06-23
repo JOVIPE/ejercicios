@@ -1,0 +1,90 @@
+Mis recetas. Pulpo a la gallega
+
+El pulpo a la gallega (en gallego polbo á feira o pulpo á feira) es un plato tradicional 
+de Galicia y básico en su gastronomía,1 aunque su consumo se ha generalizado por toda 
+España. Se trata de un plato festivo elaborado con pulpo cocido entero (generalmente en 
+ollas de cobre) que está presente en las fiestas, ferias y romerías de Galicia y El 
+Bierzo (León),2 de ahí su nombre "á feira". La cocción se realiza tradicionalmente por 
+las pulpeiras, suele servirse en la actulidad frecuentemente como tapa.
+
+Ingredientes (4 personas)
+
+1 pulpo de 1kg y 1/2
+4 patatas medianas
+1 cebolla
+unas hojas de laurel
+sal
+sal en escamas
+pimentón dulce
+aceite de oliva virgen extra
+
+Preparación
+
+Se debe ablandar el pulpo antes de cocinarlo. Esto se consigue congelando el pulpo durante 
+dos días para matar el nervio, ya que al transformarse el agua del propio alimento en hielo, 
+éste ocupa un mayor volumen y hace que se rompan los tejidos y por tanto la carne queda más 
+tierna. Si se ha decidido congelar el pulpo, un día antes de cocinarlo, se descongela en el 
+frigorífico sobre una fuente para que escurran los jugos.
+
+Poner al fuego una cazuela con agua y una cebolla y cuando rompa a hervir se añade el pulpo. 
+A continuación se sujeta por la cabeza y durante tres veces seguidas, se mete y se saca de 
+la cazuela, antes de soltarlo definitivamente; a esta técnica se le conoce como "asustar el 
+pulpo".
+
+El tiempo de cocción depende del tamaño de la pieza; así por ejemplo, un pulpo de 2 kilos se 
+cocinará durante cincuenta minutos. Una vez cocido retiramos del fuego, tapamos la cazuela y 
+se deja reposar unos 15 minutos para evitar que se caiga la piel. En la misma agua de cocer 
+el pulpo, cocemos las patatas, peladas y cortadas en rodajas gruesas. Cuando estén tiernas 
+sacar de la cazuela, escurrir y reservar.
+
+A la hora de servir, con una tijera se corta el pulpo en trozos no muy gruesos con ayuda de 
+una tijera, colocando las patatas y los trozos de pulpo en platos individuales de madera. Por 
+último, en el momento de servir se aliña sobre el pulpo un chorro de aceite de oliva y 
+espolvorear con el pimentón dulce, el pimentón picante y abundante sal gruesa.
+
+Otros platos de pulpo
+
+Cocinar pulpo
+Plato Dirección
+Pulpo a la guindilla http://pulpo-a-la-guindilla.recetascomidas.com/
+Pulpo enamorado http://pulpo-enamorado.recetascomidas.com/
+Pulpo al horno http://pulpo-al-horno.recetascomidas.com/
+
+Referencias
+
+Cunqueiro, Álvaro (2005). Galaxia. ed. La Cocina Gallega (primera edición). 
+pp. 87 - 89. ISBN 84-8288-706-8.
+Pascual, Carlos (1977). Al-Borak. ed. Guía Gastronómica de España (1ª edición). Madrid. 
+pp. 323. ISBN 84-7007-047-9.
+
+Varios
+Vídeo
+http://www.youtube.com/embed/ZkXOVmwnMSc
+
+Codiguitos. Ordenación por burbuja
+
+para i=1 hasta n-1
+    minimo = i;
+    para j=i+1 hasta n
+        si lista[j] < lista[minimo] entonces
+            minimo = j /* (!) */
+        fin si
+    fin para
+    intercambiar(lista[i], lista[minimo])
+fin para
+
+Cita del día
+Confucio (551 AC-478 AC)
+
+Cuando veáis a un hombre sabio, pensad en igualar sus virtudes. Cuando veáis un 
+hombre desprovisto de virtud, examinaos vosotros mismos. 
+
+Fórmula del día
+
+f(x) = ∫ a2·x2 + a1·x1 + a0
+
+Opinión
+Deje su comentario 
+Nombre
+Hombre Mujer
+Comentario

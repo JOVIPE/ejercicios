@@ -1,0 +1,176 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Rosario:400,700,400italic,700italic);
+
+body {
+    font-family: 'Rosario', sans-serif;
+    font-size: 14pt;
+    font-weight: normal;
+    line-height: 1.5em;
+    text-align: justify;
+    text-align-last: left;
+    color: black;
+    margin: 2em;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1883ba;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #0099cc;
+}
+
+p {
+    margin: 2em 0px;
+}
+
+a {
+    color: brown;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: lightskyblue;
+    text-decoration: underline; 
+}
+
+figure{
+    display: block;
+    width: 500px;
+    margin: auto;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 3rem 3rem 0.25rem #888888;
+    border-color: green;
+    border-style: solid;
+    border-width: 70px;
+    border-image-source: url("../image/lego-faces.png");
+    border-image-slice: 33%;
+    border-image-width: 70px;
+    border-image-outset: 0px;
+    border-image-repeat: round;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 1rem;
+    background-color: bisque;
+    padding: 0.75rem;
+}
+
+figure.no-border {
+    border-image-source: none;
+	border-width: 5px;
+}
+
+figure.multicolumn {
+    border-image-source: none;
+    padding: 0.2rem;
+    border-color: goldenrod;
+    border-width: 2px;
+    width: auto;
+    box-shadow: none;
+    margin: 2rem 0px;
+}
+
+figure.multicolumn figcaption{
+    background-color: transparent;
+    padding: 0px;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 4rem;
+}
+
+ul.main {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-left: 0px;
+}
+
+ul.main li {
+    display: inline-block;
+    margin-left: 3rem;
+    text-align: center;
+}
+
+ul  li:before {
+    content: "✐";
+    position: relative;
+    left: -0.15em;
+    color: firebrick;
+}
+
+ul.index {
+    margin: 1rem 0;
+}
+
+iframe {
+    margin: 2em;
+    border-color: black;
+    border-style: inset;
+    border-width: 2px;
+}
+
+.multic {
+    -moz-column-count: 3;
+    -moz-column-width: 30%;
+    -moz-column-gap: 5%;
+    -moz-column-rule: 2px dotted green;
+    -webkit-column-count: 3;
+    -webkit-column-width: 30%;
+    -webkit-column-gap: 5%;
+    -webkit-column-rule: 2px dotted green;
+    -ms-column-count: 3;
+    -ms-column-width: 30%;
+    -ms-column-gap: 5%;
+    -ms-column-rule: 2px dotted green;
+    column-count: 3;
+    column-width: 30%;
+    column-gap: 5%;
+    column-rule: 2px dotted green;
+
+}
+
+.multic h2 {
+    background-color: gold;
+    -moz-column-span: all;
+    -webkit-column-span: all;
+    -ms-column-span: all;
+    column-span: all;
+}
+
+pre{
+    font-family: monospace;
+    font-size: 1rem;
+    line-height: 0.8rem;
+    color: steelblue;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    width: 70%;
+    margin: auto;
+    padding: 1rem;
+    background-color: lightgray;
+    background-image: url("../image/code.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h2 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h2 a:hover {
+    background-color: transparent;
+    text-decoration: none; 
+}

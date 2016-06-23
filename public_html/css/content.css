@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+h2:after,h2:before{
+    content:"\2605"; /* caracter unicode hexadecimal*/
+    color: gold;
+}
+p{
+    quotes: "\201C" "\201D" "\2018" "\2019"; /* caracteres */
+}
+
+p:before,p:after{
+        color: red;
+        font-size: 1.5em;
+        font-weight: bold;
+}
+p:before{
+    content: open-quote;
+
+}
+p:after{
+    content: close-quote;
+
+}
+body {
+counter-reset: episodi; /* create a chapter counter scope */
+}
+h1:before {
+content: counter(episodi) ". ";
+counter-increment: episodi; /* add 1 to chapter */
+}
+h1 {
+counter-reset: section; /* set section to 0 */
+}
+h2:before {
+content: counter(episodi) "." counter(section) " ";
+counter-increment: section;
+}
+h2{
+    counter-reset: parrafo;
+}
+p:before{
+    content: counter(episodi) "." counter(section) "." counter(parrafo) " " open-quote;
+    counter-increment: parrafo; 
+}
+ul{
+    list-style-type: none;
+}
+ul li:before{
+    content:"\1f355\0020"; /*icono pizza + espacio en blanco*/
+}
+ol{
+    list-style-type: upper-roman;
+}
+ol li:before{
+    content:"\1f355\0020"; /*icono pizza + espacio en blanco*/
+}

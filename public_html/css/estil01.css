@@ -1,0 +1,37 @@
+body{
+    font-family: monospace;   
+}
+h1{
+    color: blue;
+}
+.vermell{
+    color: red;
+}
+#verd{
+    color: green;
+}
+p b{
+    color: violet;
+}
+p em{ /* em descendent p */
+    color: chartreuse;
+}
+p>em{ /* em filla de p */
+    color: black;
+}
+em+i{ /* germans i seguits */
+    color: darkgoldenrod;
+}
+h1, p{
+    font-size: 18px;
+}
+.lletra-petita{
+    font-size: 8px;
+}
+p:hover{ /* pasar el cursor per sobre */
+    color: aqua;
+    font-weight: bold;
+}
+h1:focus{ /* fer focus sobre etiqueta h1 !!! cal afegir  tabindex="1" */
+    color: darkorange;
+}

@@ -1,0 +1,31 @@
+@charset "UTF-8";
+#transition-01{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    text-align: center;
+
+
+    /*valores iniciales*/
+    background-color: red;
+    font-family: monospace;
+    font-size: 18px;   
+    color:black;
+    left: 100px;
+    /*definicion transicion*/
+    transition-property: background-color, font-family, font-size, color, left, transform;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    transition-delay: 0.5s;
+}
+#transition-01:hover {
+    /*valores finales*/
+    background-color: green;
+    font-family: sans-serif;
+    font-size: 10px;   
+    color:white;
+    left: 500px;
+    transform: rotate(90deg);
+}

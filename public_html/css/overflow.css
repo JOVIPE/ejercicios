@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+#overflow{
+    border-style: solid;
+    border-color:red;
+    border-width: 1px;
+    width: 200px;
+    height:100px;
+    overflow:auto;
+}
+

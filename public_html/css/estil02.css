@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'ritaglioregular';
+    src: url('../font/ritaglio-webfont.woff2') format('woff2'),
+         url('../font/ritaglio-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    color: darkslategray;
+    font-size: 16px;
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+h1, h2 {
+    font-family: 'Dancing Script', cursive;
+}
+h1 {
+    color: red;
+}
+h2, ol li{
+    font-size: 14px;
+}
+ul{
+    font-family: 'ritaglioregular', fantasy;
+}
+li[lang="es"]{
+    /* etiquetes li que tinguin un atribut 
+    lang que valgui 'es'*/
+    text-decoration: underline;    
+}
+li [lang="es"]{
+    /* etiquetes descendents de li que tinguin 
+    un atribut lang que valgui 'es'*/
+    font-weight: bold;
+    color: orange;
+}
+[data-opinion*="molt"]{
+    /* qualsevol etiqueta que tingui atribut 
+    data-opinion que tingui la paraula 'molt'
+    sencera o com a part d'una altra
+     dins el value*/
+    color: yellow;
+}
+[data-opinion~="molt"]{
+    /* qualsevol etiqueta que tingui atribut 
+    data-opinion que tingui la paraula 'molt'
+    sencera dins el value*/
+    color: red;
+}
+p::first-line{
+    /* primeraa línea de cada etiqueta p*/
+    background-color: yellow;
+}
+p::first-letter{
+    /* primera lletra de cada etiqueta p*/
+    font-size: 48px;
+    font-weight: bold;
+}
+ol li:nth-child(2n+1){
+    /* li descendent de ol que ocupin posició
+     senars. Inici per 1a etiqueta -> 1 */
+    background-color: blanchedalmond;
+}
+ol li:nth-child(2n){
+    /* li descendent de ol que ocupin posició
+     parell. Inici per 1a etiqueta -> 1  */
+    background-color: aquamarine;
+}
+
