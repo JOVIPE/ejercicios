@@ -161,7 +161,7 @@ fieldset{
 }
 pre{
     font-family: monospace;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     line-height: 0.8rem;
     color: steelblue;
     border-color: black;
@@ -170,6 +170,8 @@ pre{
     margin: 1rem 0px;
     padding: 1rem;
     background-color: lightgray;
+    overflow: auto; /*scroll*/
+    white-space: pre-wrap; /*corta por palabras*/
 }
 strong {
     font-weight: bolder;

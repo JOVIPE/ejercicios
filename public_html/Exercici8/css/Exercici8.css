@@ -132,6 +132,7 @@ header #logo ul li span{
 }
 header #logo ul li:nth-child(3){
     right:0;
+    top:-0.5rem;
 }
 
 header #logo ul li address{
