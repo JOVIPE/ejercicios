@@ -1,0 +1,194 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+header,  nav, section, article, aside, footer, main {
+    display: block;
+}
+body {
+    font-family:"lato",sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 2rem;
+    text-align: justify;
+    text-align-last: left;
+    color: black;
+    margin: 5%; 
+    padding: 0px;
+    background-image: url("../image/ex7-background.png");
+    background-color:  navy;
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+h1, h2 {
+    text-align: left;
+    color: #000000;
+    padding: 0px;
+}
+h1 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 2rem 0px;
+}
+h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: 1rem 0px;
+}
+#contenedor{
+    background-color: #ffffff;
+    border-color: orange;
+    border-style: solid;
+    border-width: 5px;
+    border-top-left-radius: 4rem;
+    padding: 3rem;
+    position: relative;
+}
+#contenedor main {
+    float: left;
+    width: 60%;
+}/*
+#contenedor.myvideo main {
+    width: 100%;
+}
+ */
+#contenedor aside {
+    background-color: #f2f2f2;
+    border: 1px solid #d9d9d9;
+    float: right;
+    margin-top: 2rem;
+    padding: 2rem 2rem 1rem;
+    width: 20%;
+}
+nav ul{
+    list-style-type: none;
+    text-align: center;
+    text-align-last: center;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 4rem;
+    cursor: pointer;
+}
+header nav ul{
+    position: relative;
+    right: 0px;
+    text-align: right;
+    text-align-last: right;
+}
+header nav ul li{
+    background-color: orange;
+    color:  black;
+    padding: 0.2rem 1rem;
+    margin-left: 1rem;
+    margin-right: 0px;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+nav.navegar ul{
+    list-style-type: none;
+    text-align: left;
+    margin: 0px;
+    border-color: pink;
+    border-style: solid;
+    border-width: 1px;
+    border-right: none;
+    border-left: none;
+    background-color: #ffddfa;
+}
+nav.navegar ul li{
+    margin-right: 0.5rem;
+}
+nav.navegar ul li:first-child{
+    margin-left: 0.5rem;
+}
+nav.navegar ul li:not(:last-child):after{
+    content: " > ";
+}
+footer{
+    background-color: #888888;
+    color: white;
+    position: relative;
+    bottom: 0px;
+    padding: 1rem;
+    margin: 0px auto;
+}
+#limpiar{
+    clear: both;
+}
+p {
+    margin: 1rem 0px;
+}
+fieldset{
+    border-color: #1883ba;
+    border-style: solid;
+    border-width: 1px;
+    padding: 1rem;
+}
+fieldset legend{
+    padding: 0px 1rem;
+    color: #1883ba;
+}
+label{
+    display: block;
+    position: relative;
+}
+label.inline{
+    display: inline-block;
+    margin-right: 2rem;
+}
+label input[type="text"],
+label input[type="tel"],
+label input[type="email"], 
+label select, 
+label  input[type="checkbox"]{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #1883ba;
+    background-color: #f0f5ff;
+    position: absolute;
+    width: 17rem;
+    left: 13rem;
+    top: 0.3rem;
+    padding: 0px 0.3rem;
+}
+label  input[type="checkbox"] {
+    width: auto;
+}
+fieldset:nth-of-type(2) label input[type="text"]{
+    width: 2.5rem;
+    left: 5rem;
+    text-align: right;
+}
+label input[name="dni"]{
+    width: 4.5rem;
+    text-transform: uppercase;
+}
+label input[name="codi-postal"]{
+    width: 2.5rem;
+}
+label input[name="data-naixement"]{
+    width: 5rem;
+}
+label input[name="telefon"]{
+    width: 5rem;
+}
+label textArea{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #1883ba;
+    background-color: #f0f5ff;
+    display: block;
+    width: 30rem;
+    height: 9rem;
+    font-family: 'Lato', sans-serif;
+}
+.radio{
+    display: inline-block;
+    margin-right: 2rem;
+}

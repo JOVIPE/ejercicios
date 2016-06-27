@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="ca">
+    <head>
+        <title>Exercici 7. HTML i CSS. Maquetació, formularis, animació i vídeo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/reset.css" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="css/Exercici7.css" />
+    </head>
+    <body>
+        <h1>Exercici7-formulari.html</h1>
+        <header>
+            <nav>
+                <ul>
+                    <li class="formulari">Formulari</li>
+                    <li><a href="Exercici7-animacio.html"></a>Animacio</li>
+                    <li><a href="Exercici7-galeria.html"></a>Galeria</li>
+                    <li><a href="Exercici7-video.html"></a>Video</li>
+                </ul>
+            </nav>
+        </header>
+        <div id="contenedor">
+            <nav class="navegar">
+                <ul>
+                    <li><a href="Exercici7-formulari.html">Inici</a></li>
+                    <li>Formulari</li>
+                </ul> 
+            </nav>
+            <main>
+                <section>
+                    <h2>Formulari de preinscripcio</h2>
+                    <form>
+                        <fieldset>
+                            <legend>Dades Personals</legend>
+                             <label>DNI <input type="text" name="dni" placeholder="DNI" required="" pattern="^[KLMXYZ\d]\d{7}[A-HJ-NP-TV-Z]$" maxlength="9" /></label>
+                             <label>Nom <input type="text" name="nom" placeholder="Nom" required="" pattern="" autocomplete="on" maxlength="100" /></label>
+                             <label>Cognoms <input type="text" name="congom" placeholder="Cognoms" required="" pattern="" autocomplete="on" maxlength="255" /></label>
+                             <label>Adreça <input type="text" name="adreza" placeholder="Adreça" required="" pattern="" autocomplete="on" maxlength="255" /></label>
+                             <label>Codi Postal <input type="text" name="cp" placeholder="00000" required="" pattern="^(0[1-9]|[1-4][0-9]|5[0-2])\d{3}$" autocomplete="on" maxlength="5" /></label>
+                             <label>Població <input type="text" name="poblacio" placeholder="Municipi" required="" pattern="" autocomplete="on" maxlength="150" list="lista-poblaciones"/></label>
+                             <datalist id="lista-poblaciones">
+                                 <option>Barcelona</option>
+                                 <option>L'Hospitalet de Llobregat</option>
+                                 <option>Badalona</option>
+                                 <option>Reus</option>
+                                 <option>Tarragona</option>
+                                 <option>Lleida</option>
+                                 <option>Girona</option>
+                             </datalist>
+                             <label>Provincia
+                                 <select name='provincia' required="">
+                                     <option value="0">Barcelona</option>
+                                     <option value="1" selected="">Tarragona</option>
+                                     <option value="2">Lleida</option>
+                                     <option value="3">Girona</option>
+                                 </select>
+                             </label>
+                             <label>Nacionalitat <input type="text" name="nacionalitat" placeholder="Nacionalitat" required="" pattern="" autocomplete="on" maxlength="100" /></label>
+                            <label>Data de naixement <input type="text" name="data" placeholder="dd-mm-yyyy" required="" pattern="(?:0[1-9]|[12]\d|3[01])-(?:0[1-9]|1[02])-(?:19|20)\d{2}" autocomplete="on" maxlength="10" /></label>
+                            <!--label>Data de Naixement<input type="date" name="data" required="" /></label-->
+                            <label class="radio">Home<input type="radio" name="genero" value="Home" /></label>
+                            <label class="radio">Dona<input type="radio" name="genero" value="Dona" checked="checked"/></label>
+                            <label>Telèfon <input type="tel" name="telefon" required="" autocomplete="on" placeholder="000 000 000" pattern="[6789]\d{2} \d{3} \d{3}"  maxlength="11" /></label>
+                            <label>Correu electrònic <input type="email" required="" autocomplete="email" maxlength="255" placeholder="correu electrònic" /></label>
+                            <label>Estudis
+                                <select name="estudis" required="" >
+                                    <option></option>
+                                    <option value="0">Sense estudis basics</option>
+                                    <option value="1">Primaris (EGB, ESO, FPI o equivalent)</option>
+                                    <option value="2">Secundaris (Batxillerat, BUP, FPII o equivalent)</option>
+                                    <option value="3">Estudis universitaris de cicle curt (grau, diplomatura, enginyeria tècnica, arquitectura tècnica o equivalent)</option>
+                                    <option value="4">Estudis universitaris de 2n cicle (màster oficial, licenciatura, enginyeria, arquitectura o equivalent)</option>
+                                    <option value="5">Estudis de doctorat</option>
+                                </select>
+                            </label>
+                            <label>Situació laboral
+                                <select name="situacio-laboral" required="" >
+                                    <option></option>
+                                    <option value="0">Aturat</option>
+                                    <option value="1">Ocupat</option>
+                                </select>
+                            </label>
+                            <label>Inscrit al SOC <input type="checkbox" name="soc" value="si"/></label>
+                            <label>Experiència professional  <textarea name="experiencia" placeholder="Expliqui la seva experiència laboral"></textarea></label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Relació de cursos</legend>
+                            <label>1a opció <input type="text" name="curs[]" required="" placeholder="0000" pattern="^\d{4}$" maxlength="4"></label>
+                            <label>2a opció <input type="text" name="curs[]" placeholder="0000" pattern="^\d{4}$" maxlength="4"></label>
+                            <label>3a opció <input type="text" name="curs[]" placeholder="0000" pattern="^\d{4}$" maxlength="4"></label>
+                            <label>4a opció <input type="text" name="curs[]" placeholder="0000" pattern="^\d{4}$" maxlength="4"></label>
+                        </fieldset>
+                            <p class="botons"><input type="submit" value="Enviar" /> <input type="reset" value="Esborrar" /></p>
+                    </form>
+                            <p>Test d'expressions regulars: <a href="https://regex101.com/#javascript">https://regex101.com/#javascript</a></p>
+                </section>
+            </main>
+        <aside>
+             <h2>Altres continguts</h2>
+                <ul>
+                    <li>Lorem</li>
+                    <li>ipsum</li>
+                    <li>dolor</li>
+                    <li>sit</li>
+                    <li>amet</li>
+                    <li>consectetur</li>
+                    <li>adipiscing</li>
+                    <li>elit</li>
+                    <li>Ut</li>
+                    <li>posuere</li>
+                    <li>a</li>
+                    <li>quam</li>
+                    <li>id</li>
+                    <li>elementum</li>
+                    <li>Donec</li>
+                    <li>commodo</li>
+                    <li>libero</li>
+                    <li>nulla</li>
+                    <li>ornare</li>
+                    <li>ultrices</li>
+                </ul>
+        </aside>
+        <div id="limpiar"></div>
+        </div>
+        <footer>
+            <nav>
+            <ul>
+                <li>Avis Legal</li>
+                <li>Contacte</li>
+                <li>Credits</li>
+            </ul>
+            </nav>
+        </footer>
+    </body>
+</html>
