@@ -25,15 +25,16 @@ h1 {
     font-weight: bold;
     text-align: center;
 }
-h2:before {
-    content: counter(section) ". ";
-    counter-increment: section;
-}
 h2 {
     font-size: 2rem;
     font-weight: normal;
     margin-bottom: 1.5rem;
 }
+h2:before {
+    content: counter(section) ". ";
+    counter-increment: section;
+}
+
 #doraemon{
    width: 800px;
    height: 400px;
@@ -55,7 +56,7 @@ div[id^="doraemon-"]{
 }
 #doraemon-volador{
     background-position: -450px -150px;
-    left:200px;
+    left:150px;
     bottom: 200px;
 }
 #doraemon-arpa{
@@ -67,4 +68,85 @@ div[id^="doraemon-"]{
     background-position: -300px -450px;
     left:600px;
     bottom: 50px;
+}
+#conan{
+    position: relative;
+    left:200px;
+}
+#animes{
+    list-style-type: none;
+    position: relative;
+    outline-color: blue;
+    outline-style: dotted;
+    outline-width: 1px;
+    width: 60%;
+    counter-reset: linea;
+    margin-bottom: 2rem;
+}
+#animes li:before{
+    content: counter(section) "." counter(linea) ". ";
+    counter-increment: linea;
+    left: -0.5rem;
+    position: relative;
+}
+#animes li:nth-child(2n){
+    position: absolute;
+    left: 300px;
+}
+#animes li:nth-child(2n+1){
+    position: relative;
+    left: 50px;
+}
+/* barra d'eines i icones de la barra*/
+#eines{
+    height: 120px; /* mida de les icones 118 x 188 px */
+    width: auto;
+    position: relative; 
+    background-color: transparent;
+}
+
+#eines img{
+    /* definim propietats de les imatges */
+    border-style: solid;
+    border-width: 1px;
+    border-color: red;
+    border-radius: 6px; /* CSS3 cantonades rodones */
+}
+
+.eina {
+    /*definim mides de les icones */
+    width: 118px; 
+    height: 118px;	
+    background: url("../image/ex6-IconsSocial.png") no-repeat; /* dades genèriques per a la imatge de fons
+    Treballem amb la imatge "IconsSocial.png" que anem posicionant amb "background-position". */
+}
+.Android{
+    background-position: -236px 0px;
+}
+.Android:hover{
+    background-position: -118px 0px; /*al ponerse encima se cambia por amazon*/
+}
+.Apple{
+    background-position: -354px 0px;
+}
+.Apple:hover{
+    background-position: -236px 0px;
+}
+.Windows{
+    background-position: -944px -236px;
+}
+.Windows:hover{
+    background-position: -826px -236px;
+}
+.Google{
+     background-position: -236px -118px;
+}
+.Google:hover{
+     background-position: -118px -118px;
+}
+.Twitter{
+    background-position: -354px -236px;
+}
+.Twitter:hover{
+    background-position: -236px -236px;
 }
