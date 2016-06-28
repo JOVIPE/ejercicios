@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ca">
+    <head>
+        <title>Exercici 7. Video</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/reset.css" type="text/css" />
+        <link rel="stylesheet" href="css/Exercici7.css" type="text/css" />
+    </head>
+    <body>
+        <header>
+            <h1>Exercici 7. Video</h1>
+            <nav>
+                <ul>
+                    <li><a href="Exercici7-formulari.html">Formulari</a></li>
+                    <li><a href="Exercici7-animacio.html">Animació</a></li>
+                    <li><a href="Exercici7-galeria.html">Galeria</a></li>
+                    <li class="">Vídeo</li>
+                </ul>
+            </nav>
+        </header>
+        <div id="contenedor" class="videoc">
+            <nav class="navegar">
+                <ul>
+                    <li><a href="Exercici7-video.html">Inici</a></li>
+                    <li>Vídeo</li>
+                </ul>
+            </nav>            
+            <main>
+                <section>
+                    <p>Conversor de formats: <a href="http://video.online-convert.com">http://video.online-convert.com</a><br />
+                        Norma Subtítols VTT: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Video_Text_Tracks_Format">https://developer.mozilla.org/en-US/docs/Web/API/Web_Video_Text_Tracks_Format</a></p>
+                    <div id="video">
+                        <video width="480" height="386" controls="" poster="media/Spot SEAT Ibiza 1985.png"  preload="metadata">
+                            <source src="media/Spot SEAT Ibiza 1985.ogv" type="video/ogg" />
+                            <source src="media/Spot SEAT Ibiza 1985.webm" type="video/mp4" />
+                            <source src="media/Spot SEAT Ibiza 1985.mp4" type="video/mp4" />
+                            <track kind="subtitles" src="media/Spot SEAT Ibiza 1985-ca.vtt" srclang="ca" label="Català" default=""></track>
+                            <track kind="subtitles" src="media/Spot SEAT Ibiza 1985-es.vtt" srclang="es" label="Castellà" ></track>
+                            El teu navegador no suporta l'etiqueta video.
+                        </video>
+                    </div>
+                </section>
+            </main>
+            <div id="clear"></div>
+        </div>
+        <footer>
+            <nav>
+                <ul>
+                    <li>Avís legal</li>
+                    <li>Contacte</li>
+                    <li>Crèdits</li>
+                </ul>
+            </nav>
+        </footer>
+</body>
+</html>

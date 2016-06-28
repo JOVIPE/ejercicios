@@ -12,7 +12,7 @@ body {
     text-align: justify;
     text-align-last: left;
     color: black;
-    margin: 5%; 
+    margin: 15%; 
     padding: 0px;
     background-image: url("../image/ex7-background.png");
     background-color:  navy;
@@ -47,12 +47,9 @@ h2 {
 }
 #contenedor main {
     float: left;
-    width: 60%;
-}/*
-#contenedor.myvideo main {
-    width: 100%;
+    width: 55%;
 }
- */
+
 #contenedor aside {
     background-color: #f2f2f2;
     border: 1px solid #d9d9d9;
@@ -124,6 +121,7 @@ footer{
 p {
     margin: 1rem 0px;
 }
+/*formulario*/
 fieldset{
     border-color: #1883ba;
     border-style: solid;
@@ -169,10 +167,10 @@ label input[name="dni"]{
     width: 4.5rem;
     text-transform: uppercase;
 }
-label input[name="codi-postal"]{
+label input[name="cp"]{
     width: 2.5rem;
 }
-label input[name="data-naixement"]{
+label input[name="data"]{
     width: 5rem;
 }
 label input[name="telefon"]{
@@ -191,4 +189,208 @@ label textArea{
 .radio{
     display: inline-block;
     margin-right: 2rem;
+}
+.envres{
+    text-align: center;
+    text-align-last: center;
+
+}
+.envres input[type="submit"],input[type="reset"]{
+    width: 7rem;
+    background-image: linear-gradient(to top, #1883ba ,#f0f5ff); 
+    margin-right: 3rem;
+    padding: 0.5rem 0px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* galeria*/
+#galeria {
+    text-align: left;
+}
+#galeria figure {
+    display: inline-block;
+    text-align: center;
+    text-align-last: center;
+    padding: 0.6rem;
+    width: 170px;
+    margin: 1rem 2rem;
+    background-color: #eee;
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
+    z-index: 1;
+    box-shadow: 3px 3px 2px #888888;
+    transition: width 1s, height 1s, transform 1s;
+}
+#galeria figure:nth-child(n+1) {
+    transform:rotate(-3deg) ;
+}
+#galeria figure:nth-child(3n+1) {
+    transform:rotate(3deg);
+    background-color:  beige;
+}
+#galeria figure:hover {
+    transform:rotate(0deg) scale(1.5,1.5);
+    z-index: 2;
+}
+/*animacion*/
+#doraemon{
+    width: 800px;
+    height: 400px;
+    background-color: #99ccff;
+    background-image: url("../image/ex7-doraemon-fons.png");
+    background-origin: left top;
+    background-repeat: no-repeat;
+    position: relative;
+}
+div[id|="doraemon"]{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background-image: url("../image/ex7-doraemon.png");
+}
+#doraemon-volant{
+    left: 150px;
+    top: 50px;
+    background-position: -450px  -150px;
+    /* Animació */
+    animation-name: vol-doraemon;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+@keyframes vol-doraemon{
+    from{
+        left: 150px;
+        top: 50px;
+    }
+    25% {
+        left: 450px;
+        top: 100px;
+        background-position: -450px  -300px;
+    }
+    75% {
+        left: 300px;
+        top: 200px;
+    }
+    to{
+        left: 650px;
+        top: 100px;
+        background-position: -450px  -300px;
+    }
+}
+
+#baner{
+    width: 600px;
+    height: 200px;
+    background-color: transparent;
+    background-image: url("../image/ex7-banner.png");
+    background-origin: left top;
+    background-repeat: no-repeat;
+    position: relative;
+    /* Animació */
+    animation-name: anunci;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;    
+}
+
+@keyframes anunci{
+    0%{
+        background-position:0px  0px;
+    }
+    50%{
+        background-position: 0px  -200px;
+    }
+    100%{
+        background-position: 0px  -400px;
+    }
+    }
+
+/* NEU */
+div.neu {
+    position: fixed;	
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    top: 0px;
+    z-index: 3000;
+}
+#neu-1 {
+    font-size: 48pt;
+    left: 350px;
+    color: chartreuse;
+		
+    animation-name:neus01, rotacio;
+    animation-duration:15s,10s;
+    animation-timing-function:ease-in-out,linear;
+    animation-delay:0.5s;
+    animation-iteration-count:infinite;
+    animation-direction:normal;
+    animation-play-state:running;
+}
+#neu-2 {
+    font-size: 80pt;
+    left: 550px;
+    color: aquamarine;	
+
+    animation-name:neus02, rotacio;
+    animation-duration:10s,6s;
+    animation-timing-function:linear;
+    animation-delay:0.10s;
+    animation-iteration-count:infinite;
+    animation-direction:normal;
+    animation-play-state:running;
+}
+#neu-3 {
+    font-size: 48pt;
+    left: 650px;
+    color: #dfecb6;
+		
+    animation-name:neus03, rotacio;
+    animation-duration:20s,8s;
+    animation-timing-function:cubic-bezier(0.3,0.5,0.6,0.8),linear;
+    animation-delay:0.5s;
+    animation-iteration-count:infinite;
+    animation-direction:normal;
+    animation-play-state:running;
+}
+
+@keyframes rotacio
+{
+    from  {transform: rotate(0deg);}
+    to  {transform: rotate(-360deg);}
+}
+@keyframes neus01
+{
+    0%  	{left:350px; top:-10px;}
+    25%  	{left:450px; top:200px;}
+    50%	{left:300px; top:400px;}
+    100%  {left:500px; top:800px;}
+}
+@keyframes neus02
+{
+    from  {left:550px; top:-10px;}
+    to  	{left:700px; top:800px;}
+}
+@keyframes neus03
+{
+    from  {left:650px; top:-10px;}
+    to  	{left:650px; top:800px;}
+}
+
+#video{
+    width:480px;
+    margin: auto;
+}
+#contenedor.videoc main {
+    width: 100%;
 }
