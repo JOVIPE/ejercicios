@@ -1,0 +1,215 @@
+@charset "UTF-8";
+
+body{
+    width: 80vw;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.5rem;
+    font-family: 'Rosario', sans-serif;
+    color:black;
+    margin:auto;
+}
+h1 {
+    font-size: 1.4rem;
+}
+h2{
+    color:white;
+    background-color:  blue;
+    padding: 0.5rem;
+}
+
+footer {
+    height: 4rem;
+    margin-bottom: 0px;
+    background-color: lightblue;
+    line-height: 3rem;
+    background-image: url('../image/platon.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: right;
+   
+}
+
+footer ul{
+    position: relative;
+    padding-left:0px;
+    margin-top: 1rem;
+   
+}
+
+footer ul li {
+    display: inline-block;
+    
+}
+
+footer ul li:nth-child(1){
+    position: relative;
+    left: 0.5rem;
+}
+
+footer ul li:nth-child(2){
+    position: absolute;
+    left: 30%;
+}
+
+footer ul li:nth-child(3){
+    position: absolute;
+    left: 45%;
+}
+
+footer ul li:nth-child(4){
+    position: absolute;
+    left: 60%;
+}
+
+footer ul li:before {
+    content: "\2605\0020";
+    color: gold;
+    
+}
+ul{
+    list-style-type: none;
+}
+.multic {
+    -moz-column-count: 2;
+    -moz-column-width: 50%;
+    -moz-column-gap: 5%;
+    -moz-column-rule: 2px dotted #99ccff;
+    column-count: 2;
+    column-width: 50%;
+    column-gap: 5%;
+    column-rule: 2px dotted #99ccff;
+}
+
+img{
+    border:1px solid darkorange;
+    margin-top: 1rem;
+    background-color:  white;
+}
+figure{
+    text-align: center;
+    background-color: bisque;
+    border: 1px solid darkorange;
+    width: 300px;
+    margin: auto;
+    padding-bottom: 1rem;
+}
+
+p.comillas:before{
+    content: "«\0020";
+}
+
+p.comillas:after{
+    content: "\0020»";    
+}
+.envres{
+    text-align: left;
+    -ms-text-align-last: left; 
+}
+.envres input{
+    width: 8rem;
+    background-image: linear-gradient(to bottom, white, #99ccff);
+    border-radius: 10px;
+    margin-right: 3rem;
+    padding: 0.5rem 0px;
+    border:1px solid #99ccff;    
+    text-align: center;
+    color: grey;
+    cursor: pointer;
+    box-shadow: 5px 5px 0 lightgray;
+    
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover{
+    transition-duration: 1s;
+    -ms-transform: rotate(360deg); 
+    -webkit-transform: rotate(360deg); 
+    transform: rotate(360deg);    
+}
+nav.navegar ul{
+    list-style-type: none;
+    text-align: right;
+    margin: 0px;
+}
+nav.navegar ul li{
+    margin-right: 0.5rem;
+}
+nav.navegar ul li:first-child{
+    margin-left: 0.5rem;
+}
+nav.navegar ul li:not(:last-child):after{
+    content: " > ";
+}
+fieldset{
+    border-style: solid;
+    border-width: 2px;
+    border-color: blue;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    margin-bottom: 1.5rem;
+    width: 40%;
+    border-radius: 10px;
+}
+legend{
+    margin-left: 1rem;
+}
+
+label{
+    display: block;
+    position: relative;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    
+}
+
+label  input[type="text"]{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #1883ba;
+    background-color: #f0f5ff;
+    position: absolute;
+    width: 17rem;
+    left: 13rem;
+    top: 0.3rem;
+    padding: 0px 0.3rem;
+}
+
+label select{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #1883ba;
+    background-color: #f0f5ff;
+    position: absolute;
+    width: 17rem;
+    left: 13rem;
+    top: 0.3rem;
+    padding: 0px 0.3rem;  
+}
+.radio{
+    display: inline-block;
+    margin-right: 2rem;
+}
+#logo{
+    clear:both;
+    float:left;
+    margin-top: 1rem;
+    
+}
+
+#parte1{
+    font-family: 'Rosario';  
+    color: fuchsia;
+}
+
+#parte2{
+    font-family: 'Lobster';
+    font-size: 2rem;
+    text-shadow: 5px 5px 5px #aaa;
+    text-decoration: underline;
+    
+}
+#parte3{
+    font-family: 'Rosario';  
+    color: fuchsia;
+    margin-left:3rem;
+}

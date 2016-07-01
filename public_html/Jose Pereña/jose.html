@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="ca">
+    <head>
+        <title>Jose</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Rosario' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/normalize.css" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="css/jose.css" />
+    </head>
+    <body>
+        <h1></h1>
+        <header>
+        <div id="logo">
+                <span id="parte1">la</span><span id="parte2">ReBotiga</span><br/> 
+                <span id="parte3">d'Internet</span>
+            </div>
+             <nav class="navegar">
+                <ul>
+                    <li><a href="jose.html">Inici</a></li>
+                    <li>Nous Clients</li>
+                </ul> 
+            </nav>
+        </header>
+        <div id="contenedor">
+                    <h1>Nous clients</h1>
+                    <form>
+                        <fieldset>
+                            <legend>Dades del client</legend>
+                             <label>CIF <input type="text" name="CIF" placeholder="CIF" required="" pattern="^[KLMXYZ\d]\d{7}[A-HJ-NP-TV-Z]$" maxlength="9" /></label>
+                             <label>Nom <input type="text" name="nom" placeholder="Nom" required="" pattern="" autocomplete="on" maxlength="150" list="listanombres"/></label>
+                             <datalist id="listanombres">
+                                 <option>Alpha, S.L.</option>
+                                 <option>Beta, S.L.</option>
+                                 <option>Gamma, S.L.</option>
+                                 <option>Epsilon, S.L.</option>
+
+                             </datalist> 
+                        </fieldset>
+                        <fieldset>
+                            
+                            <legend>dades del producte</legend>
+                            <label>Referencia<input type="text" name="referencia" placeholder="X-NNNN" required="" pattern="^[A-Z]\-\d{4}$" maxlength="6" /></label>
+                             <label>Producte
+                                 <select name='producte' required="">
+                                     <optgroup label="Cadires">
+                                     <option value="0" selected="">Cadira de rodes</option>
+                                     <option value="1" >Cadira</option>
+                                     </optgroup>
+                                     <optgroup label="Taules">
+                                     <option value="2">Taula rodona</option>
+                                     <option value="3">Taula quadrada</option>
+                                     </optgroup>
+                                 </select>
+                             </label>
+
+                        </fieldset>
+                        <fieldset>
+                            <legend>Forma de pagament</legend>
+
+                            <label class="radio">Efectiu<input type="radio" name="pago" value="Efectiu"  checked="checked"/></label>
+                            <label class="radio">Targeta<input type="radio" name="pago" value="Tarjeta"/></label>
+                        </fieldset>
+                            <p class="envres"><input type="submit" value="Enviar" /> <input type="reset" value="Reiniciar" /></p>
+                    </form>
+        </div>                   
+        <div class="multic">
+            <h2>Instruccions</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+            <p>Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi.</p>
+
+            <p>Fusce convallis, mauris imperdiet gravida bibendum, nisl turpis suscipit mauris, sed placerat ipsum urna sed risus. In convallis tellus a mauris. Curabitur non elit ut libero tristique sodales. Mauris a lacus. Donec mattis semper leo. In hac habitasse platea dictumst.</p>
+
+            <p class="comillas">Proin nonummy, lacus eget pulvinar lacinia, pede felis dignissim leo, vitae tristique magna lacus sit amet eros. Nullam ornare. Praesent odio ligula, dapibus sed, tincidunt eget, dictum ac, nibh. Nam quis lacus. Nunc eleifend molestie velit. Morbi lobortis quam eu velit.</p>
+
+            <figure>
+                <img src="image/platon.png" width="150" height="180" alt="Imagen de Platón"/>
+                <figcaption>El filòsof Plató</figcaption>
+ 
+        </div>
+        <footer>
+            <nav>
+            <ul>
+                <li>C. de Pi,2.Barcelona 08000</li>
+                <li>Avis Legal</li>
+                <li>Contacte</li>
+                <li>Privacitat</li>
+            </ul>
+            </nav>
+        </footer>
+    </body>
+</html>
